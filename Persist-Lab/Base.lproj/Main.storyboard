@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="1320.289855072464" y="198.88392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Photos View Controller-->
         <scene sceneID="oo1-y3-mbX">
             <objects>
-                <viewController id="BjE-Qh-KCP" sceneMemberID="viewController">
+                <viewController id="BjE-Qh-KCP" customClass="PhotosViewController" customModule="Persist_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ndv-jQ-mst">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

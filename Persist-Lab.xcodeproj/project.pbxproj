@@ -14,6 +14,7 @@
 		A5204A9023428E6E000EF956 /* Persist_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A8F23428E6E000EF956 /* Persist_LabTests.swift */; };
 		A5204A9B2342961C000EF956 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A9A2342961C000EF956 /* PhotosViewController.swift */; };
 		A5204A9F234297BB000EF956 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A9E234297BB000EF956 /* PhotosTableViewCell.swift */; };
+		A5204AA4234299E1000EF956 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AA3234299E1000EF956 /* PhotosModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A5204A9123428E6E000EF956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5204A9A2342961C000EF956 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		A5204A9E234297BB000EF956 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		A5204AA3234299E1000EF956 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		A5204A7923428E6B000EF956 /* Persist-Lab */ = {
 			isa = PBXGroup;
 			children = (
+				A5204AA5234299F5000EF956 /* Models */,
 				A5204A9C2342962B000EF956 /* Controllers */,
 				A5204AA0234297C7000EF956 /* Views */,
 				A5204A8123428E6D000EF956 /* Assets.xcassets */,
@@ -121,6 +124,14 @@
 				A5204A9E234297BB000EF956 /* PhotosTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A5204AA5234299F5000EF956 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5204AA3234299E1000EF956 /* PhotosModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +237,7 @@
 			files = (
 				A5204A9F234297BB000EF956 /* PhotosTableViewCell.swift in Sources */,
 				A5204A7B23428E6B000EF956 /* AppDelegate.swift in Sources */,
+				A5204AA4234299E1000EF956 /* PhotosModel.swift in Sources */,
 				A5204A9B2342961C000EF956 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

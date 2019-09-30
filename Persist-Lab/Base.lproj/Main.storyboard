@@ -17,7 +17,19 @@
                     <view key="view" contentMode="scaleToFill" id="bc5-dy-cBq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ICS-9P-bU1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ICS-9P-bU1" firstAttribute="leading" secondItem="Hni-eA-jz2" secondAttribute="leading" id="BS0-xk-F1a"/>
+                            <constraint firstItem="Hni-eA-jz2" firstAttribute="bottom" secondItem="ICS-9P-bU1" secondAttribute="bottom" id="Bdb-25-b3x"/>
+                            <constraint firstItem="Hni-eA-jz2" firstAttribute="trailing" secondItem="ICS-9P-bU1" secondAttribute="trailing" id="Jlm-mI-e2X"/>
+                            <constraint firstItem="ICS-9P-bU1" firstAttribute="top" secondItem="Hni-eA-jz2" secondAttribute="top" id="gPu-Ye-AZn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hni-eA-jz2"/>
                     </view>
                     <navigationItem key="navigationItem" id="2fx-dX-ijx"/>
@@ -33,7 +45,26 @@
                     <view key="view" contentMode="scaleToFill" id="ndv-jQ-mst">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Ci-Q1-bej">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="WWo-Ik-Aud">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Ci-Q1-bej" firstAttribute="top" secondItem="WWo-Ik-Aud" secondAttribute="bottom" id="6sZ-K8-jl2"/>
+                            <constraint firstItem="RJb-q5-InB" firstAttribute="bottom" secondItem="7Ci-Q1-bej" secondAttribute="bottom" id="GdP-3G-1Wy"/>
+                            <constraint firstItem="7Ci-Q1-bej" firstAttribute="leading" secondItem="RJb-q5-InB" secondAttribute="leading" id="Lmy-qC-lC7"/>
+                            <constraint firstItem="WWo-Ik-Aud" firstAttribute="top" secondItem="RJb-q5-InB" secondAttribute="top" id="T1b-vk-2OZ"/>
+                            <constraint firstItem="WWo-Ik-Aud" firstAttribute="leading" secondItem="RJb-q5-InB" secondAttribute="leading" id="gS6-zf-Dnt"/>
+                            <constraint firstItem="RJb-q5-InB" firstAttribute="trailing" secondItem="7Ci-Q1-bej" secondAttribute="trailing" id="hrA-ee-fwI"/>
+                            <constraint firstItem="WWo-Ik-Aud" firstAttribute="trailing" secondItem="RJb-q5-InB" secondAttribute="trailing" id="lbB-XM-bnf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RJb-q5-InB"/>
                     </view>
                     <navigationItem key="navigationItem" id="03o-2l-Y5v"/>

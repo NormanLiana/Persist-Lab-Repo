@@ -10,21 +10,74 @@ import UIKit
 
 class PhotosViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    // MARK: Outlets
+    @IBOutlet weak var tableViewOutlet: UITableView!
+    @IBOutlet weak var searchBarOutlet: UISearchBar!
+    
+    // MARK: Properties
+    var photos = [Photos]() {
+        didSet {
+            tableViewOutlet.reloadData()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: Lifecycle Methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableViewOutlet.delegate = self
+        tableViewOutlet.dataSource = self
+        searchBarOutlet.delegate = self
     }
-    */
+    
+    // MARK: Private Methods
+    private func loadData(search: String) {
+        PhotosAPIManager.shared.getPhotos(searchTerm: search) { (result) in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let photosFromOnline):
+                self.photos = photosFromOnline
+            }
+        }
+    }
 
+}
+
+// MARK: Extensions
+extension PhotosViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return photos.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableViewOutlet.dequeueReusableCell(withIdentifier: "photosCell", for: indexPath) as? PhotosTableViewCell {
+            let photo = photos[indexPath.row]
+            ImageManager.shared.getImage(imgURL: photo.largeImageURL) { (result) in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .failure(let error):
+                        print(error)
+                    case .success(let imageFromOnline):
+                        cell.imgOutlet.image = imageFromOnline
+                    }
+                }
+            }
+            return cell
+        }
+        return UITableViewCell()
+    }
+    
+    
+}
+
+extension PhotosViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 235
+    }
+}
+
+extension PhotosViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        loadData(search: searchBar.text ?? "")
+    }
 }

@@ -15,6 +15,11 @@
 		A5204A9B2342961C000EF956 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A9A2342961C000EF956 /* PhotosViewController.swift */; };
 		A5204A9F234297BB000EF956 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204A9E234297BB000EF956 /* PhotosTableViewCell.swift */; };
 		A5204AA4234299E1000EF956 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AA3234299E1000EF956 /* PhotosModel.swift */; };
+		A5204AA72342AC71000EF956 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AA62342AC71000EF956 /* NetworkManager.swift */; };
+		A5204AAA2342ACF8000EF956 /* AppErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AA92342ACF8000EF956 /* AppErrorHandler.swift */; };
+		A5204AAC2342AD28000EF956 /* PhotosAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AAB2342AD28000EF956 /* PhotosAPIClient.swift */; };
+		A5204AAE23438733000EF956 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AAD23438733000EF956 /* ImageManager.swift */; };
+		A5204AB023438A01000EF956 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AAF23438A01000EF956 /* Secret.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		A5204A9A2342961C000EF956 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		A5204A9E234297BB000EF956 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
 		A5204AA3234299E1000EF956 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		A5204AA62342AC71000EF956 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A5204AA92342ACF8000EF956 /* AppErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrorHandler.swift; sourceTree = "<group>"; };
+		A5204AAB2342AD28000EF956 /* PhotosAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAPIClient.swift; sourceTree = "<group>"; };
+		A5204AAD23438733000EF956 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		A5204AAF23438A01000EF956 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				A5204A9A2342961C000EF956 /* PhotosViewController.swift */,
+				A5204AA82342AC7A000EF956 /* Networking */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -130,8 +141,20 @@
 			isa = PBXGroup;
 			children = (
 				A5204AA3234299E1000EF956 /* PhotosModel.swift */,
+				A5204AAF23438A01000EF956 /* Secret.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A5204AA82342AC7A000EF956 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A5204AA62342AC71000EF956 /* NetworkManager.swift */,
+				A5204AA92342ACF8000EF956 /* AppErrorHandler.swift */,
+				A5204AAB2342AD28000EF956 /* PhotosAPIClient.swift */,
+				A5204AAD23438733000EF956 /* ImageManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +260,13 @@
 			files = (
 				A5204A9F234297BB000EF956 /* PhotosTableViewCell.swift in Sources */,
 				A5204A7B23428E6B000EF956 /* AppDelegate.swift in Sources */,
+				A5204AA72342AC71000EF956 /* NetworkManager.swift in Sources */,
+				A5204AAE23438733000EF956 /* ImageManager.swift in Sources */,
+				A5204AAA2342ACF8000EF956 /* AppErrorHandler.swift in Sources */,
 				A5204AA4234299E1000EF956 /* PhotosModel.swift in Sources */,
 				A5204A9B2342961C000EF956 /* PhotosViewController.swift in Sources */,
+				A5204AB023438A01000EF956 /* Secret.swift in Sources */,
+				A5204AAC2342AD28000EF956 /* PhotosAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

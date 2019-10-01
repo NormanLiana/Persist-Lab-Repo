@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="No7-WJ-xyT">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -50,26 +50,29 @@
                                 <rect key="frame" x="0.0" y="144" width="414" height="669"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="165" id="z54-de-fyR" customClass="PhotosTableViewCell" customModule="Persist_Lab" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="165"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="photosCell" rowHeight="243" id="z54-de-fyR" customClass="PhotosTableViewCell" customModule="Persist_Lab" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="243"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z54-de-fyR" id="bvC-5c-XrN">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="164.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="242.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RaB-k4-nJ3">
-                                                    <rect key="frame" x="87" y="18.5" width="240" height="128"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RaB-k4-nJ3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="240" id="MKs-57-Gbw"/>
-                                                        <constraint firstAttribute="height" constant="128" id="Zwq-Su-wNs"/>
+                                                        <constraint firstAttribute="width" constant="414" id="MKs-57-Gbw"/>
+                                                        <constraint firstAttribute="height" constant="233" id="Zwq-Su-wNs"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="RaB-k4-nJ3" firstAttribute="centerX" secondItem="bvC-5c-XrN" secondAttribute="centerX" id="6vf-V0-gLj"/>
-                                                <constraint firstItem="RaB-k4-nJ3" firstAttribute="centerY" secondItem="bvC-5c-XrN" secondAttribute="centerY" id="XYa-PI-v1j"/>
+                                                <constraint firstItem="RaB-k4-nJ3" firstAttribute="centerY" secondItem="bvC-5c-XrN" secondAttribute="centerY" constant="-4.75" id="XYa-PI-v1j"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgOutlet" destination="RaB-k4-nJ3" id="pHH-js-tD6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -91,6 +94,10 @@
                         <viewLayoutGuide key="safeArea" id="RJb-q5-InB"/>
                     </view>
                     <navigationItem key="navigationItem" id="03o-2l-Y5v"/>
+                    <connections>
+                        <outlet property="searchBarOutlet" destination="WWo-Ik-Aud" id="XYd-ba-HGV"/>
+                        <outlet property="tableViewOutlet" destination="7Ci-Q1-bej" id="XRw-R1-iVa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cU-6o-Wi8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,11 +121,11 @@
             </objects>
             <point key="canvasLocation" x="-507" y="-125"/>
         </scene>
-        <!--Item 1-->
+        <!--Photos-->
         <scene sceneID="oo5-dl-gA4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tyx-p9-9qN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="jE8-10-Ovq"/>
+                    <tabBarItem key="tabBarItem" title="Photos" id="jE8-10-Ovq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IvK-zs-d22">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -133,11 +140,11 @@
             </objects>
             <point key="canvasLocation" x="410.14492753623193" y="-449.33035714285711"/>
         </scene>
-        <!--Item 2-->
+        <!--Favorites-->
         <scene sceneID="vlt-NA-Vv5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Du8-D1-zHp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="I2P-sO-wpf"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" id="I2P-sO-wpf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lYI-h8-wNH">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

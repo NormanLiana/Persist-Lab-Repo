@@ -25,6 +25,17 @@ class PhotosDetailViewController: UIViewController {
         setUpViews()
     }
     
+    // MARK: IBActions
+    @IBAction func favoriteButtonPressed(_ sender: UIButton) {
+        let favoritedPhoto = FavoritePhoto(likes: photo.likes, favorites: photo.favorites, tags: photo.tags, largeImageURL: photo.largeImageURL)
+        DispatchQueue.global(qos: .utility).async {
+            try? PhotoPersistenceHelper.manager.save(newPhoto: favoritedPhoto)
+            DispatchQueue.main.async {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
+    }
+    
     // Private Methods
     private func setUpViews() {
         likesOutlet.text = "Likes: \(photo.likes)"

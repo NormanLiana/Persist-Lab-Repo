@@ -141,6 +141,9 @@
                                 <rect key="frame" x="66" y="120" width="272" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ADD PHOTO TO MY FAVORITES"/>
+                                <connections>
+                                    <action selector="favoriteButtonPressed:" destination="xZo-6D-sgB" eventType="touchUpInside" id="qDd-VS-pT2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

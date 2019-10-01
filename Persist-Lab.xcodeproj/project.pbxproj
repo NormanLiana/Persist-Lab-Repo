@@ -24,6 +24,8 @@
 		A5204AE42343E0E4000EF956 /* FavoritePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AE32343E0E4000EF956 /* FavoritePhoto.swift */; };
 		A5204AE62343E291000EF956 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AE52343E291000EF956 /* PersistenceManager.swift */; };
 		A5204AE92343E862000EF956 /* PhotoPersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AE82343E862000EF956 /* PhotoPersistenceHelper.swift */; };
+		A5204AED2343FDC3000EF956 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AEC2343FDC3000EF956 /* FavoriteTableViewCell.swift */; };
+		A5204AEF2343FFE0000EF956 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AEE2343FFE0000EF956 /* FavoriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		A5204AE32343E0E4000EF956 /* FavoritePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhoto.swift; sourceTree = "<group>"; };
 		A5204AE52343E291000EF956 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		A5204AE82343E862000EF956 /* PhotoPersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPersistenceHelper.swift; sourceTree = "<group>"; };
+		A5204AEC2343FDC3000EF956 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		A5204AEE2343FFE0000EF956 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 			children = (
 				A5204A9A2342961C000EF956 /* PhotosViewController.swift */,
 				A5204AE12343D02F000EF956 /* PhotosDetailViewController.swift */,
+				A5204AEE2343FFE0000EF956 /* FavoriteViewController.swift */,
 				A5204AA82342AC7A000EF956 /* Networking */,
 			);
 			path = Controllers;
@@ -142,6 +147,7 @@
 			children = (
 				A5204A7E23428E6B000EF956 /* Main.storyboard */,
 				A5204A9E234297BB000EF956 /* PhotosTableViewCell.swift */,
+				A5204AEC2343FDC3000EF956 /* FavoriteTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -282,7 +288,9 @@
 				A5204A7B23428E6B000EF956 /* AppDelegate.swift in Sources */,
 				A5204AE22343D02F000EF956 /* PhotosDetailViewController.swift in Sources */,
 				A5204AE62343E291000EF956 /* PersistenceManager.swift in Sources */,
+				A5204AEF2343FFE0000EF956 /* FavoriteViewController.swift in Sources */,
 				A5204AA72342AC71000EF956 /* NetworkManager.swift in Sources */,
+				A5204AED2343FDC3000EF956 /* FavoriteTableViewCell.swift in Sources */,
 				A5204AAE23438733000EF956 /* ImageManager.swift in Sources */,
 				A5204AAA2342ACF8000EF956 /* AppErrorHandler.swift in Sources */,
 				A5204AA4234299E1000EF956 /* PhotosModel.swift in Sources */,

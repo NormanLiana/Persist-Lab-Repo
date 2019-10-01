@@ -21,6 +21,8 @@
 		A5204AAE23438733000EF956 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AAD23438733000EF956 /* ImageManager.swift */; };
 		A5204AB023438A01000EF956 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AAF23438A01000EF956 /* Secret.swift */; };
 		A5204AE22343D02F000EF956 /* PhotosDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AE12343D02F000EF956 /* PhotosDetailViewController.swift */; };
+		A5204AE42343E0E4000EF956 /* FavoritePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AE32343E0E4000EF956 /* FavoritePhoto.swift */; };
+		A5204AE62343E291000EF956 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204AE52343E291000EF956 /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		A5204AAD23438733000EF956 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		A5204AAF23438A01000EF956 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		A5204AE12343D02F000EF956 /* PhotosDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetailViewController.swift; sourceTree = "<group>"; };
+		A5204AE32343E0E4000EF956 /* FavoritePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhoto.swift; sourceTree = "<group>"; };
+		A5204AE52343E291000EF956 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 			children = (
 				A5204AA3234299E1000EF956 /* PhotosModel.swift */,
 				A5204AAF23438A01000EF956 /* Secret.swift */,
+				A5204AE32343E0E4000EF956 /* FavoritePhoto.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,8 +161,17 @@
 				A5204AA92342ACF8000EF956 /* AppErrorHandler.swift */,
 				A5204AAB2342AD28000EF956 /* PhotosAPIClient.swift */,
 				A5204AAD23438733000EF956 /* ImageManager.swift */,
+				A5204AE72343E299000EF956 /* Persistence */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		A5204AE72343E299000EF956 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				A5204AE52343E291000EF956 /* PersistenceManager.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,10 +278,12 @@
 				A5204A9F234297BB000EF956 /* PhotosTableViewCell.swift in Sources */,
 				A5204A7B23428E6B000EF956 /* AppDelegate.swift in Sources */,
 				A5204AE22343D02F000EF956 /* PhotosDetailViewController.swift in Sources */,
+				A5204AE62343E291000EF956 /* PersistenceManager.swift in Sources */,
 				A5204AA72342AC71000EF956 /* NetworkManager.swift in Sources */,
 				A5204AAE23438733000EF956 /* ImageManager.swift in Sources */,
 				A5204AAA2342ACF8000EF956 /* AppErrorHandler.swift in Sources */,
 				A5204AA4234299E1000EF956 /* PhotosModel.swift in Sources */,
+				A5204AE42343E0E4000EF956 /* FavoritePhoto.swift in Sources */,
 				A5204A9B2342961C000EF956 /* PhotosViewController.swift in Sources */,
 				A5204AB023438A01000EF956 /* Secret.swift in Sources */,
 				A5204AAC2342AD28000EF956 /* PhotosAPIClient.swift in Sources */,

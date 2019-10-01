@@ -40,6 +40,19 @@ class PhotosViewController: UIViewController {
             }
         }
     }
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToDVC" {
+            guard let photoDVC = segue.destination as? PhotosDetailViewController else {
+                fatalError()
+            }
+            guard let selectedIndexPath = tableViewOutlet.indexPathForSelectedRow else {
+                fatalError()
+            }
+            photoDVC.photo = photos[selectedIndexPath.row]
+        }
+    }
 
 }
 

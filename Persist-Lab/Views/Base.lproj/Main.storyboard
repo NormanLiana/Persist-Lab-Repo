@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="1320.289855072464" y="-449.33035714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Photos Detail View Controller-->
         <scene sceneID="4Fo-Ek-0V2">
             <objects>
-                <viewController id="xZo-6D-sgB" sceneMemberID="viewController">
+                <viewController id="xZo-6D-sgB" customClass="PhotosDetailViewController" customModule="Persist_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vfr-Tm-rXJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,6 +141,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="c5a-c7-Ljg"/>
                     </view>
+                    <connections>
+                        <outlet property="favoritesOultet" destination="uoa-nK-tHn" id="YIe-Kf-ijZ"/>
+                        <outlet property="imageOutlet" destination="0Ct-tB-3oD" id="3xs-XR-Euf"/>
+                        <outlet property="likesOutlet" destination="UdF-K3-A6c" id="dmP-Vw-2zp"/>
+                        <outlet property="tagsOutlet" destination="9Bu-qM-2kg" id="bJX-pR-fth"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZY-aG-3Us" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
